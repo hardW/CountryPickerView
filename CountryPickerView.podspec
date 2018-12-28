@@ -6,7 +6,9 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/kizitonwose/CountryPickerView"
   spec.license      = "MIT"
   spec.author       = { "Kizito Nwose" => "kizitonwose@gmail.com" }
-  spec.platform     = :ios, "8.0"
+  spec.ios.deployment_target = '8.0'
+  spec.tvos.deployment_target = '10.0'
+
   spec.source       = { :git => "https://github.com/kizitonwose/CountryPickerView.git", :tag => spec.version }
   spec.source_files  = "CountryPickerView/**/*.{swift,xib}"
   spec.resource_bundles = {
