@@ -6,3 +6,10 @@ target 'CountryPickerViewDemo' do
   pod 'CountryPickerView', :path => '../'  
 
 end
+
+target 'CountryPickerViewTVDemo' do
+  use_frameworks!
+
+  pod 'CountryPickerView', :path => '../'  
+
+end

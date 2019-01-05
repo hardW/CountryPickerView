@@ -16,7 +16,9 @@
 		51BFE54B21E06DBD001F21DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE54A21E06DBD001F21DE /* ViewController.swift */; };
 		51BFE54E21E06DBD001F21DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE54C21E06DBD001F21DE /* Main.storyboard */; };
 		51BFE55021E06DBF001F21DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE54F21E06DBF001F21DE /* Assets.xcassets */; };
+		529CD1C2375B974554A71E53 /* Pods_CountryPickerViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BFE55C21E08747001F21DE /* Pods_CountryPickerViewDemo.framework */; };
 		725ED841B1989E74241F9377 /* Pods_CountryPickerViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8C8BC3DAF9C411DCD8D1C9 /* Pods_CountryPickerViewDemo.framework */; };
+		DD23545D036CFD263B732664 /* Pods_CountryPickerViewTVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AC3BADCDC2E1B1C95CAE3F /* Pods_CountryPickerViewTVDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,7 @@
 		004CA3091F705DD600B690B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004CA30C1F705DD600B690B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		004CA30E1F705DD600B690B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AC3BADCDC2E1B1C95CAE3F /* Pods_CountryPickerViewTVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryPickerViewTVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		459706724723319B379BF2E4 /* Pods-CountryPickerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		476008F23554AD41FFB937C1 /* Pods-CountryPickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		51BFE54621E06DBD001F21DE /* CountryPickerViewTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryPickerViewTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +51,10 @@
 		51BFE54D21E06DBD001F21DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51BFE54F21E06DBF001F21DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51BFE55121E06DBF001F21DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BFE55C21E08747001F21DE /* Pods_CountryPickerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CountryPickerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8C8BC3DAF9C411DCD8D1C9 /* Pods_CountryPickerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryPickerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BD0033D41614F110341920 /* Pods-CountryPickerViewTVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewTVDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewTVDemo/Pods-CountryPickerViewTVDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EAFDF95818384E2F1EA92D05 /* Pods-CountryPickerViewTVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewTVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewTVDemo/Pods-CountryPickerViewTVDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				725ED841B1989E74241F9377 /* Pods_CountryPickerViewDemo.framework in Frameworks */,
+				529CD1C2375B974554A71E53 /* Pods_CountryPickerViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD23545D036CFD263B732664 /* Pods_CountryPickerViewTVDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +116,8 @@
 			children = (
 				459706724723319B379BF2E4 /* Pods-CountryPickerViewDemo.debug.xcconfig */,
 				476008F23554AD41FFB937C1 /* Pods-CountryPickerViewDemo.release.xcconfig */,
+				E6BD0033D41614F110341920 /* Pods-CountryPickerViewTVDemo.debug.xcconfig */,
+				EAFDF95818384E2F1EA92D05 /* Pods-CountryPickerViewTVDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -127,7 +137,9 @@
 		6D5112DD0A48489AB2BB6070 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51BFE55C21E08747001F21DE /* Pods_CountryPickerViewDemo.framework */,
 				9B8C8BC3DAF9C411DCD8D1C9 /* Pods_CountryPickerViewDemo.framework */,
+				20AC3BADCDC2E1B1C95CAE3F /* Pods_CountryPickerViewTVDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,7 +156,7 @@
 				004CA2FC1F705DD600B690B8 /* Frameworks */,
 				004CA2FD1F705DD600B690B8 /* Resources */,
 				509720AE1FDEE189001244B0 /* Embed Frameworks */,
-				2AAC00A383A3A5564C99DCB9 /* [CP] Copy Pods Resources */,
+				18009DDD8749CAA8F818B8DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51BFE55421E06DBF001F21DE /* Build configuration list for PBXNativeTarget "CountryPickerViewTVDemo" */;
 			buildPhases = (
+				96C3B615F21E66C4FC4A755C /* [CP] Check Pods Manifest.lock */,
 				51BFE54221E06DBD001F21DE /* Sources */,
 				51BFE54321E06DBD001F21DE /* Frameworks */,
 				51BFE54421E06DBD001F21DE /* Resources */,
+				181F19FC601D8AE052F9C5D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,7 +249,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AAC00A383A3A5564C99DCB9 /* [CP] Copy Pods Resources */ = {
+		18009DDD8749CAA8F818B8DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,18 +257,62 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/CountryPickerView/CountryPickerView.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CountryPickerView.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		181F19FC601D8AE052F9C5D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewTVDemo/Pods-CountryPickerViewTVDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewTVDemo/Pods-CountryPickerViewTVDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96C3B615F21E66C4FC4A755C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CountryPickerViewTVDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FBD015984CE10E7BD30F91BD /* [CP] Check Pods Manifest.lock */ = {
@@ -473,6 +531,7 @@
 		};
 		51BFE55221E06DBF001F21DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6BD0033D41614F110341920 /* Pods-CountryPickerViewTVDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -486,6 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bimawa.CountryPickerViewTVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -497,6 +557,7 @@
 		};
 		51BFE55321E06DBF001F21DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAFDF95818384E2F1EA92D05 /* Pods-CountryPickerViewTVDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -509,6 +570,7 @@
 				INFOPLIST_FILE = CountryPickerViewTVDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bimawa.CountryPickerViewTVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
