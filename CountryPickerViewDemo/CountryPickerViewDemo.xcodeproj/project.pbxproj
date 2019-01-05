@@ -12,6 +12,10 @@
 		004CA3081F705DD600B690B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004CA3061F705DD600B690B8 /* Main.storyboard */; };
 		004CA30A1F705DD600B690B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004CA3091F705DD600B690B8 /* Assets.xcassets */; };
 		004CA30D1F705DD600B690B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004CA30B1F705DD600B690B8 /* LaunchScreen.storyboard */; };
+		51BFE54921E06DBD001F21DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE54821E06DBD001F21DE /* AppDelegate.swift */; };
+		51BFE54B21E06DBD001F21DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE54A21E06DBD001F21DE /* ViewController.swift */; };
+		51BFE54E21E06DBD001F21DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE54C21E06DBD001F21DE /* Main.storyboard */; };
+		51BFE55021E06DBF001F21DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE54F21E06DBF001F21DE /* Assets.xcassets */; };
 		725ED841B1989E74241F9377 /* Pods_CountryPickerViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8C8BC3DAF9C411DCD8D1C9 /* Pods_CountryPickerViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,12 @@
 		004CA30E1F705DD600B690B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		459706724723319B379BF2E4 /* Pods-CountryPickerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		476008F23554AD41FFB937C1 /* Pods-CountryPickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryPickerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		51BFE54621E06DBD001F21DE /* CountryPickerViewTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryPickerViewTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BFE54821E06DBD001F21DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51BFE54A21E06DBD001F21DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51BFE54D21E06DBD001F21DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51BFE54F21E06DBF001F21DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51BFE55121E06DBF001F21DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B8C8BC3DAF9C411DCD8D1C9 /* Pods_CountryPickerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryPickerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51BFE54321E06DBD001F21DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				004CA3011F705DD600B690B8 /* CountryPickerViewDemo */,
+				51BFE54721E06DBD001F21DE /* CountryPickerViewTVDemo */,
 				004CA3001F705DD600B690B8 /* Products */,
 				04431B08EF5FCEAD7590DEEB /* Pods */,
 				6D5112DD0A48489AB2BB6070 /* Frameworks */,
@@ -67,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				004CA2FF1F705DD600B690B8 /* CountryPickerViewDemo.app */,
+				51BFE54621E06DBD001F21DE /* CountryPickerViewTVDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +112,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		51BFE54721E06DBD001F21DE /* CountryPickerViewTVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51BFE54821E06DBD001F21DE /* AppDelegate.swift */,
+				51BFE54A21E06DBD001F21DE /* ViewController.swift */,
+				51BFE54C21E06DBD001F21DE /* Main.storyboard */,
+				51BFE54F21E06DBF001F21DE /* Assets.xcassets */,
+				51BFE55121E06DBF001F21DE /* Info.plist */,
+			);
+			path = CountryPickerViewTVDemo;
+			sourceTree = "<group>";
+		};
 		6D5112DD0A48489AB2BB6070 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +143,8 @@
 				004CA2FB1F705DD600B690B8 /* Sources */,
 				004CA2FC1F705DD600B690B8 /* Frameworks */,
 				004CA2FD1F705DD600B690B8 /* Resources */,
-				D073A94C45743AB4CB4D944D /* [CP] Embed Pods Frameworks */,
 				509720AE1FDEE189001244B0 /* Embed Frameworks */,
+				2AAC00A383A3A5564C99DCB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,19 +155,40 @@
 			productReference = 004CA2FF1F705DD600B690B8 /* CountryPickerViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		51BFE54521E06DBD001F21DE /* CountryPickerViewTVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51BFE55421E06DBF001F21DE /* Build configuration list for PBXNativeTarget "CountryPickerViewTVDemo" */;
+			buildPhases = (
+				51BFE54221E06DBD001F21DE /* Sources */,
+				51BFE54321E06DBD001F21DE /* Frameworks */,
+				51BFE54421E06DBD001F21DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountryPickerViewTVDemo;
+			productName = CountryPickerViewTVDemo;
+			productReference = 51BFE54621E06DBD001F21DE /* CountryPickerViewTVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		004CA2F71F705DD600B690B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Kizito Nwose";
 				TargetAttributes = {
 					004CA2FE1F705DD600B690B8 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = K3JWY7DT4K;
+						ProvisioningStyle = Automatic;
+					};
+					51BFE54521E06DBD001F21DE = {
+						CreatedOnToolsVersion = 10.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				004CA2FE1F705DD600B690B8 /* CountryPickerViewDemo */,
+				51BFE54521E06DBD001F21DE /* CountryPickerViewTVDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -170,25 +223,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51BFE54421E06DBD001F21DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BFE55021E06DBF001F21DE /* Assets.xcassets in Resources */,
+				51BFE54E21E06DBD001F21DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D073A94C45743AB4CB4D944D /* [CP] Embed Pods Frameworks */ = {
+		2AAC00A383A3A5564C99DCB9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CountryPickerView/CountryPickerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CountryPickerView.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountryPickerViewDemo/Pods-CountryPickerViewDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FBD015984CE10E7BD30F91BD /* [CP] Check Pods Manifest.lock */ = {
@@ -221,6 +287,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51BFE54221E06DBD001F21DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BFE54B21E06DBD001F21DE /* ViewController.swift in Sources */,
+				51BFE54921E06DBD001F21DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -238,6 +313,14 @@
 				004CA30C1F705DD600B690B8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51BFE54C21E06DBD001F21DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51BFE54D21E06DBD001F21DE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,6 +471,53 @@
 			};
 			name = Release;
 		};
+		51BFE55221E06DBF001F21DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CountryPickerViewTVDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bimawa.CountryPickerViewTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		51BFE55321E06DBF001F21DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CountryPickerViewTVDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bimawa.CountryPickerViewTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +535,15 @@
 			buildConfigurations = (
 				004CA3121F705DD600B690B8 /* Debug */,
 				004CA3131F705DD600B690B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51BFE55421E06DBF001F21DE /* Build configuration list for PBXNativeTarget "CountryPickerViewTVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51BFE55221E06DBF001F21DE /* Debug */,
+				51BFE55321E06DBF001F21DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
