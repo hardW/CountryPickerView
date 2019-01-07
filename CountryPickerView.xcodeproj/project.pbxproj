@@ -21,8 +21,6 @@
 		51BFE53721E05069001F21DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE52B21E05057001F21DE /* Extensions.swift */; };
 		51BFE53821E05069001F21DE /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE52D21E05057001F21DE /* NibView.swift */; };
 		51BFE53921E05073001F21DE /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE52821E05057001F21DE /* CountryPickerView.bundle */; };
-		51BFE54021E06B2A001F21DE /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE53D21E06B2A001F21DE /* LICENSE.md */; };
-		51BFE54121E06B2A001F21DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE53E21E06B2A001F21DE /* README.md */; };
 		51BFE55E21E08A0F001F21DE /* CountryPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 004CA2EE1F7056E700B690B8 /* CountryPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51BFE55F21E08A10001F21DE /* CountryPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 004CA2EE1F7056E700B690B8 /* CountryPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -184,8 +182,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51BFE51321E047A4001F21DE /* Build configuration list for PBXNativeTarget "CountryPickerViewTVOS" */;
 			buildPhases = (
-				51BFE50921E047A4001F21DE /* Headers */,
 				51BFE50A21E047A4001F21DE /* Sources */,
+				51BFE50921E047A4001F21DE /* Headers */,
 				51BFE50B21E047A4001F21DE /* Frameworks */,
 				51BFE50C21E047A4001F21DE /* Resources */,
 			);
@@ -252,8 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BFE54021E06B2A001F21DE /* LICENSE.md in Resources */,
-				51BFE54121E06B2A001F21DE /* README.md in Resources */,
 				51BFE52421E04BD7001F21DE /* CountryPickerViewTVOS.xib in Resources */,
 				51BFE52E21E05057001F21DE /* CountryPickerView.bundle in Resources */,
 			);
