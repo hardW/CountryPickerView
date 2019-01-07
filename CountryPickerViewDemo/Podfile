@@ -1,15 +1,13 @@
-platform :ios, '8.0'
 
-target 'CountryPickerViewDemo' do
-  use_frameworks!
+use_frameworks!
 
+target 'CountryPickerViewDemo' do 
+  platform :ios, '8.0'
   pod 'CountryPickerView', :path => '../'  
-
 end
 
 target 'CountryPickerViewTVDemo' do
-  use_frameworks!
-
+  platform :tvos, '10.0'
   pod 'CountryPickerView', :path => '../'  
 
 end

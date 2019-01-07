@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CountryPicke 
+import CountryPickerView
 
 class ViewController: UIViewController {
 
