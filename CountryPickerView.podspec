@@ -9,9 +9,8 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '8.0'
   spec.tvos.deployment_target = '10.0'
 
-  spec.source       = { :git => "https://github.com/kizitonwose/CountryPickerView.git", :tag => spec.version }
-  spec.ios.source_files  = "Sources/**/*.{swift,xib}"
-  spec.tvos.source_files  = "Sources/**/*.{swift,xib}"
+  spec.source       = { :git => "https://github.com/kizitonwose/CountryPickerView.git", :tag => spec.version, :branch => 'feature/supportTVOS' }
+  spec.source_files  = "Sources/**/*.{swift,xib}"
   spec.ios.source_files  = "CountryPickerViewiOS/**/*.{swift,xib}"
   spec.tvos.source_files  = "CountryPickerViewTVOS/**/*.{swift,xib}"
   spec.resource_bundles = {
