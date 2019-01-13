@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CountryPickerViewController: UITableViewController {
+public class CountryPickerViewController: UITableViewController {
     
     fileprivate var searchController: UISearchController?
     fileprivate var searchResults = [Country]()
@@ -23,7 +23,7 @@ class CountryPickerViewController: UITableViewController {
         return dataSource.showOnlyPreferredSection
     }
     
-    weak var countryPickerView: CountryPickerView! {
+    public weak var countryPickerView: CountryPickerView! {
         didSet {
             dataSource = CountryPickerViewDataSourceInternal(view: countryPickerView)
         }
@@ -31,14 +31,14 @@ class CountryPickerViewController: UITableViewController {
     
     fileprivate var dataSource: CountryPickerViewDataSourceInternal!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         prepareTableItems()
         prepareNavItem()
         prepareSearchBar()
     }
-   
+    
 }
 
 // UI Setup
@@ -90,7 +90,7 @@ extension CountryPickerViewController {
     
     func prepareNavItem() {
         navigationItem.title = dataSource.navigationTitle
-
+        
         // Add a close button if this is the root view controller
         if navigationController?.viewControllers.count == 1 {
             let closeButton = dataSource.closeButtonNavigationItem
@@ -107,16 +107,12 @@ extension CountryPickerViewController {
         }
         searchController = UISearchController(searchResultsController:  nil)
         searchController?.searchResultsUpdater = self
-        #if os(iOS)
         searchController?.dimsBackgroundDuringPresentation = false
-        #elseif os(tvOS)
-
-        #endif
         searchController?.hidesNavigationBarDuringPresentation = searchBarPosition == .tableViewHeader
         searchController?.definesPresentationContext = true
         searchController?.searchBar.delegate = self
         searchController?.delegate = self
-
+        
         switch searchBarPosition {
         case .tableViewHeader: tableView.tableHeaderView = searchController?.searchBar
         case .navigationBar: navigationItem.titleView = searchController?.searchBar
@@ -132,15 +128,15 @@ extension CountryPickerViewController {
 //MARK:- UITableViewDataSource
 extension CountryPickerViewController {
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override public func numberOfSections(in tableView: UITableView) -> Int {
         return isSearchMode ? 1 : sectionsTitles.count
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return isSearchMode ? searchResults.count : countries[sectionsTitles[section]]!.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = String(describing: CountryTableViewCell.self)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? CountryTableViewCell
@@ -154,24 +150,22 @@ extension CountryPickerViewController {
         
         cell.flgSize = dataSource.cellImageViewSize
         cell.imageView?.clipsToBounds = true
-
+        
         cell.imageView?.layer.cornerRadius = dataSource.cellImageViewCornerRadius
         cell.imageView?.layer.masksToBounds = true
         
         cell.textLabel?.text = name
         cell.textLabel?.font = dataSource.cellLabelFont
         cell.accessoryType = country == countryPickerView.selectedCountry ? .checkmark : .none
-        #if os(iOS)
         cell.separatorInset = .zero
-        #endif
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return isSearchMode ? nil : sectionsTitles[section]
     }
     
-    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    override public func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         if isSearchMode {
             return nil
         } else {
@@ -182,25 +176,25 @@ extension CountryPickerViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+    override public func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         return sectionsTitles.index(of: title)!
     }
 }
 
 //MARK:- UITableViewDelegate
 extension CountryPickerViewController {
-
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    
+    public override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
             header.textLabel?.font = dataSource.sectionTitleLabelFont
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let country = isSearchMode ? searchResults[indexPath.row]
             : countries[sectionsTitles[indexPath.section]]![indexPath.row]
-
+        
         searchController?.dismiss(animated: false, completion: nil)
         
         let completion = {
@@ -217,7 +211,7 @@ extension CountryPickerViewController {
 
 // MARK:- UISearchResultsUpdating
 extension CountryPickerViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
+    public func updateSearchResults(for searchController: UISearchController) {
         isSearchMode = false
         if let text = searchController.searchBar.text, text.count > 0 {
             isSearchMode = true
@@ -231,7 +225,7 @@ extension CountryPickerViewController: UISearchResultsUpdating {
             } else if let array = countries[String(text[text.startIndex])] {
                 indexArray = array
             }
-
+            
             searchResults.append(contentsOf: indexArray.filter({ $0.name.hasPrefix(text) }))
         }
         tableView.reloadData()
@@ -240,34 +234,28 @@ extension CountryPickerViewController: UISearchResultsUpdating {
 
 // MARK:- UISearchBarDelegate
 extension CountryPickerViewController: UISearchBarDelegate {
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         // Hide the back/left navigationItem button
         navigationItem.leftBarButtonItem = nil
-        #if os(iOS)
         navigationItem.hidesBackButton = true
-        #elseif os(tvOS)
-        
-        #endif
     }
-    #if os(iOS)
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         // Show the back/left navigationItem button
         prepareNavItem()
         navigationItem.hidesBackButton = false
     }
-    #elseif os(tvOS)
     
-    #endif
 }
 
 // MARK:- UISearchControllerDelegate
 // Fixes an issue where the search bar goes off screen sometimes.
 extension CountryPickerViewController: UISearchControllerDelegate {
-    func willPresentSearchController(_ searchController: UISearchController) {
+    public func willPresentSearchController(_ searchController: UISearchController) {
         self.navigationController?.navigationBar.isTranslucent = true
     }
     
-    func willDismissSearchController(_ searchController: UISearchController) {
+    public func willDismissSearchController(_ searchController: UISearchController) {
         self.navigationController?.navigationBar.isTranslucent = false
     }
 }
