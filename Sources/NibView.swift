@@ -31,12 +31,13 @@ public class NibView: UIView {
     }
     
     fileprivate func loadViewFromNib() -> UIView {
+        let bundle = Bundle(for :type(of:self))
         #if os(iOS)
-        let bundle = Bundle(identifier: "CountryPickerView")
+        let nibName = "CountryPickerView"
         #elseif os(tvOS)
-        let bundle = Bundle(identifier: "CountryPickerViewTVOS")
-        #endif
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let nibName = "CountryPickerViewTVOS"
+        #endif 
+        let nib = UINib(nibName: nibName, bundle: bundle)
         let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         
         return nibView
