@@ -107,7 +107,9 @@ extension CountryPickerViewController {
         }
         searchController = UISearchController(searchResultsController:  nil)
         searchController?.searchResultsUpdater = self
+        #if os(iOS)
         searchController?.dimsBackgroundDuringPresentation = false
+        #endif
         searchController?.hidesNavigationBarDuringPresentation = searchBarPosition == .tableViewHeader
         searchController?.definesPresentationContext = true
         searchController?.searchBar.delegate = self
@@ -157,7 +159,9 @@ extension CountryPickerViewController {
         cell.textLabel?.text = name
         cell.textLabel?.font = dataSource.cellLabelFont
         cell.accessoryType = country == countryPickerView.selectedCountry ? .checkmark : .none
+        #if os(iOS)
         cell.separatorInset = .zero
+        #endif
         return cell
     }
     
@@ -237,15 +241,18 @@ extension CountryPickerViewController: UISearchBarDelegate {
     public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         // Hide the back/left navigationItem button
         navigationItem.leftBarButtonItem = nil
+        #if os(iOS)
         navigationItem.hidesBackButton = true
+        #endif
     }
     
+    #if os(iOS)
     public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         // Show the back/left navigationItem button
         prepareNavItem()
         navigationItem.hidesBackButton = false
     }
-    
+    #endif
 }
 
 // MARK:- UISearchControllerDelegate
