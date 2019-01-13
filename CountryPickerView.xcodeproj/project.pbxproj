@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004CA32F1F706DF500B690B8 /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004CA32E1F706DF500B690B8 /* CountryPickerView.xib */; };
+		516EDA2B21EB2B860098D9E1 /* CountryPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004CA32E1F706DF500B690B8 /* CountryPickerView.xib */; };
 		51BFE52421E04BD7001F21DE /* CountryPickerViewTVOS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE52321E04BD7001F21DE /* CountryPickerViewTVOS.xib */; };
 		51BFE52E21E05057001F21DE /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51BFE52821E05057001F21DE /* CountryPickerView.bundle */; };
 		51BFE52F21E05057001F21DE /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE52921E05057001F21DE /* CountryPickerView.swift */; };
@@ -241,8 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				004CA32F1F706DF500B690B8 /* CountryPickerView.xib in Resources */,
 				51BFE53921E05073001F21DE /* CountryPickerView.bundle in Resources */,
+				516EDA2B21EB2B860098D9E1 /* CountryPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +416,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/SupportFiles/Info-iOS.plist";
+				INFOPLIST_FILE = "SupportFiles/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kizitonwose.CountryPickerView;
@@ -437,7 +437,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/SupportFiles/Info-iOS.plist";
+				INFOPLIST_FILE = "SupportFiles/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kizitonwose.CountryPickerView;
@@ -462,7 +462,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Sources/SupportFiles/Info-tvOS.plist";
+				INFOPLIST_FILE = "SupportFiles/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -492,7 +492,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Sources/SupportFiles/Info-tvOS.plist";
+				INFOPLIST_FILE = "SupportFiles/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
