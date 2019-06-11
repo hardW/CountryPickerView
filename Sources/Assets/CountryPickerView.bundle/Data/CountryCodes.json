@@ -1,5 +1,10 @@
 [
 {
+	"name": "Wales",
+	"dial_code": "",
+	"code": "WLS"
+},
+{
 	"name": "Scotland",
 	"dial_code": "",
 	"code": "SCO"
